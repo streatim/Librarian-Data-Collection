@@ -1,0 +1,63 @@
+:root {
+    --active-nav-item-color: red;
+    --active-nav-text-color: black;
+    --inactive-nav-item-color: black;
+    --inactive-nav-text-color: red;
+}
+
+#formBody {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60rem;
+}
+
+nav.navMenu {
+    display: grid;
+    padding-left: 3%;
+    grid-template-columns: repeat(4, 22%);
+    grid-column-gap: 3%;
+}
+.navMenu>a.navItem {
+    background-color: var(--inactive-nav-item-color);
+    color: var(--inactive-nav-text-color);
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    min-width: 75%;
+    text-decoration: none;
+
+    border-radius:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#guideImage {
+    display: block;
+    width: 300px;
+    height: 216px;
+    border: solid;
+}
+
+.navMenu>a.active {
+    background-color: var(--active-nav-item-color);
+    color: var(--active-nav-text-color);
+}
+
+form>div.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 5%;
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #0a0a0a;
+}
+
+input[type='text'] {
+    width: 100%;
+}
